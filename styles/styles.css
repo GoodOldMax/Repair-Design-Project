@@ -1,6 +1,20 @@
+@font-face {
+    font-family: "Nunito Sans";
+    src: local("NunitoSans"), 
+        url("../fonts/NunitoSans_10pt-Regular.woff2") format("woff2"),
+        url("../fonts/NunitoSans_10pt-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Yeseva One";
+    src: local("YesevaOne"),
+        url("../fonts/YesevaOne-Regular.woff2") format("woff2"),
+        url("../fonts/YesevaOne-Regular.ttf") format("ttf");
+}
+
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Nunito Sans', Arial;
 }
 
 body * {
@@ -65,6 +79,7 @@ body * {
 
 .header a[href^="tel:"] {
     color: #E3B873;
+    font-size: 11px;
 }
 
 .hero {
@@ -93,16 +108,15 @@ body * {
 
 .title {
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: -0.07em;
     text-transform: uppercase;
     color: #E3B873;
 }
 
 .subtitle {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
     text-align: center;
@@ -166,7 +180,7 @@ body * {
 }
 
 .input-label {
-    font-family: sans;
+    font-family: 'Nunito Sans', Arial;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -177,7 +191,7 @@ body * {
 .input-text {
     display: block;
     width: 100%;
-    font-family: sans;
+    font-family: 'Nunito Sans', Arial;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
