@@ -139,6 +139,11 @@ body * {
     line-height: 28px;
 }
 
+.title_extra_small {
+    font-size: 14px;
+    line-height: 19px;;
+}
+
 .title_white {
     color: white;
 }
@@ -232,4 +237,96 @@ body * {
 
 .input-text ::placeholder.input_dark {
     color: #363636;
+}
+
+.projects-gallery {
+    background: #131313;
+    height: 1074px;
+}
+
+#projects-gallery-container {
+    position: relative;
+    max-width: 1170px;
+    height: 552px;
+    margin-top: 107px;
+    background: #131313;
+}
+
+.pager {
+    background: transparent;
+}
+
+.pager-button {
+    background: transparent;
+    border: none;
+}
+
+.pager-button > img {
+    background: transparent;
+    margin: 9px;
+}
+
+.pager-button_backward {
+    margin-right: 12px;
+}
+
+.pager-button_forward {
+    margin-left: 12px;
+}
+
+.list-vertical {
+    list-style: none;
+    padding: 0;
+}
+
+.list-vertical_columns_2 {
+    columns: 2;
+    column-gap: 20px;
+}
+
+.list-horizontal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.list-horizontal > .list-item {
+    display: inline-block;
+}
+
+.list-vertical > .list-item {
+    margin-bottom: 34px;
+}
+
+#projects-gallery-description {
+    width: 442px;
+    display: inline-block;
+    margin-top: 70px;
+}
+
+#projects-gallery-description h2 {
+    width: 253px;
+}
+
+#projects-gallery-pager {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#projects-gallery-image {
+    float: right;
+    width: 60%;
+}
+
+#projects-gallery-image .list-horizontal {
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+#projects-gallery-image .list-item_selected * {
+    text-decoration: underline;
 }
