@@ -111,7 +111,6 @@ body * {
     font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
-    text-transform: uppercase;
     color: #E3B873;
 }
 
@@ -120,7 +119,6 @@ body * {
     font-style: normal;
     font-weight: 400;
     text-align: center;
-    text-transform: uppercase;
     color: #181818;
 }
 
@@ -146,6 +144,18 @@ body * {
 
 .title_white {
     color: white;
+}
+
+.title_grey {
+    color: #363636;
+}
+
+.title_align_center {
+    text-align: center;
+}
+
+.title_uppercase {
+    text-transform: uppercase;
 }
 
 .text {
@@ -184,7 +194,7 @@ body * {
     margin-right: 20px;
 }
 
-.input-text-label {
+.input-label {
     font-family: 'Nunito Sans', Arial;
     font-style: normal;
     font-weight: 400;
@@ -252,10 +262,6 @@ body * {
 
 .input-checkbox:checked:after {
     content: url("../images/checkbox_checked.svg");
-}
-
-.input-checkbox-label {
-    
 }
 
 .projects-gallery {
@@ -351,7 +357,9 @@ body * {
 }
 
 #online-control {
-    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
 }
@@ -370,6 +378,7 @@ body * {
     width: fit-content;
     height: fit-content;
     width: 100%;
+    text-align: center;
 }
 
 #online-control-demo img:nth-child(2) {
@@ -385,17 +394,13 @@ body * {
     max-width: 680px;
 }
 
-#online-control-text p {
-    text-align: center;
-}
-
 #online-control-form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 769px;
-    margin: 0 auto;
+    margin: 92px auto;
 }
 
 .online-control-form-input-container {
@@ -412,4 +417,46 @@ body * {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 100%;
+    text-align: center;
+    margin-top: 33px;
+}
+
+#types-of-repair-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1236px;
+    margin: 0 auto;
+}
+
+.types-of-repair-item {
+    position: relative;
+}
+
+.repair-description {
+    position: absolute;
+    width: 330px;
+    height: 286px;
+    bottom: -159px;
+    left: 31px;
+    background: white;
+    box-shadow: 10px 10px 20px 0px #00000008;
+    padding: 25px 34px;
+}
+
+.repair-description-list {
+    list-style-position: inside;
+    padding: 0;
+    margin: 13px auto;
+}
+
+.repair-description-list li {
+    font-size: 13px;
+    color: #959595;
+}
+
+.repair-item-button {
+    position: absolute;
+    bottom: -133px;
+    left: 32px;
 }
