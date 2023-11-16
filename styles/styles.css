@@ -111,7 +111,6 @@ body * {
     font-family: 'Yeseva One', 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
-    text-transform: uppercase;
     color: #E3B873;
 }
 
@@ -120,7 +119,6 @@ body * {
     font-style: normal;
     font-weight: 400;
     text-align: center;
-    text-transform: uppercase;
     color: #181818;
 }
 
@@ -139,8 +137,25 @@ body * {
     line-height: 28px;
 }
 
+.title_extra_small {
+    font-size: 14px;
+    line-height: 19px;;
+}
+
 .title_white {
     color: white;
+}
+
+.title_grey {
+    color: #363636;
+}
+
+.title_align_center {
+    text-align: center;
+}
+
+.title_uppercase {
+    text-transform: uppercase;
 }
 
 .text {
@@ -232,4 +247,216 @@ body * {
 
 .input-text ::placeholder.input_dark {
     color: #363636;
+}
+
+.input-checkbox {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.input-checkbox:after {
+    border: 1.5px solid #FFFFFF;
+}
+
+.input-checkbox:checked:after {
+    content: url("../images/checkbox_checked.svg");
+}
+
+.projects-gallery {
+    background: #131313;
+    height: 1074px;
+}
+
+#projects-gallery-container {
+    position: relative;
+    max-width: 1170px;
+    height: 552px;
+    margin-top: 107px;
+    background: #131313;
+}
+
+.pager {
+    background: transparent;
+}
+
+.pager-button {
+    background: transparent;
+    border: none;
+}
+
+.pager-button > img {
+    background: transparent;
+    margin: 9px;
+}
+
+.pager-button_backward {
+    margin-right: 12px;
+}
+
+.pager-button_forward {
+    margin-left: 12px;
+}
+
+.list-vertical {
+    list-style: none;
+    padding: 0;
+}
+
+.list-vertical_columns_2 {
+    columns: 2;
+    column-gap: 20px;
+}
+
+.list-horizontal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.list-horizontal > .list-item {
+    display: inline-block;
+}
+
+.list-vertical > .list-item {
+    margin-bottom: 34px;
+}
+
+#projects-gallery-description {
+    width: 442px;
+    display: inline-block;
+    margin-top: 70px;
+}
+
+#projects-gallery-description h2 {
+    width: 253px;
+}
+
+#projects-gallery-pager {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#projects-gallery-image {
+    float: right;
+    width: 60%;
+}
+
+#projects-gallery-image .list-horizontal {
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+#projects-gallery-image .list-item_selected * {
+    text-decoration: underline;
+}
+
+#online-control {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title-separator-image {
+    display: flex;
+    justify-content: center;
+}
+
+.title-separator-image img:nth-child(2) {
+    margin: 0 9px;
+}
+
+#online-control-demo {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+}
+
+#online-control-demo img:nth-child(2) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#online-control-text {
+    max-width: 680px;
+}
+
+#online-control-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 769px;
+    margin: 92px auto;
+}
+
+.online-control-form-input-container {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+
+#online-control-form-submit {
+    width: 200px;
+}
+
+#online-control-form-agreement {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 33px;
+}
+
+#types-of-repair-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1236px;
+    margin: 0 auto;
+}
+
+.types-of-repair-item {
+    position: relative;
+}
+
+.repair-description {
+    position: absolute;
+    width: 330px;
+    height: 286px;
+    bottom: -159px;
+    left: 31px;
+    background: white;
+    box-shadow: 10px 10px 20px 0px #00000008;
+    padding: 25px 34px;
+}
+
+.repair-description-list {
+    list-style-position: inside;
+    padding: 0;
+    margin: 13px auto;
+}
+
+.repair-description-list li {
+    font-size: 13px;
+    color: #959595;
+}
+
+.repair-item-button {
+    position: absolute;
+    bottom: -133px;
+    left: 32px;
 }
