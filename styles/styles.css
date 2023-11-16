@@ -184,7 +184,7 @@ body * {
     margin-right: 20px;
 }
 
-.input-label {
+.input-text-label {
     font-family: 'Nunito Sans', Arial;
     font-style: normal;
     font-weight: 400;
@@ -237,6 +237,25 @@ body * {
 
 .input-text ::placeholder.input_dark {
     color: #363636;
+}
+
+.input-checkbox {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.input-checkbox:after {
+    border: 1.5px solid #FFFFFF;
+}
+
+.input-checkbox:checked:after {
+    content: url("../images/checkbox_checked.svg");
+}
+
+.input-checkbox-label {
+    
 }
 
 .projects-gallery {
@@ -329,4 +348,68 @@ body * {
 
 #projects-gallery-image .list-item_selected * {
     text-decoration: underline;
+}
+
+#online-control {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title-separator-image {
+    display: flex;
+    justify-content: center;
+}
+
+.title-separator-image img:nth-child(2) {
+    margin: 0 9px;
+}
+
+#online-control-demo {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+}
+
+#online-control-demo img:nth-child(2) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#online-control-text {
+    max-width: 680px;
+}
+
+#online-control-text p {
+    text-align: center;
+}
+
+#online-control-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 769px;
+    margin: 0 auto;
+}
+
+.online-control-form-input-container {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+
+#online-control-form-submit {
+    width: 200px;
+}
+
+#online-control-form-agreement {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
 }
